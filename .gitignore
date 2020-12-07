@@ -9,3 +9,5 @@ pubspec.lock
 cljs-test-runner-out
 target
 .lein-failures
+build/
+.gradle
