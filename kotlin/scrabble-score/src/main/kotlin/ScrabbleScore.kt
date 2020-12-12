@@ -13,7 +13,6 @@ object ScrabbleScore {
         }
     }
 
-    fun scoreWord(word: String): Int {
-        return word.map { scoreLetter(it) } .sum()
-    }
+    fun scoreWord(word: String): Int = word.map(::scoreLetter).sum()
+
 }
