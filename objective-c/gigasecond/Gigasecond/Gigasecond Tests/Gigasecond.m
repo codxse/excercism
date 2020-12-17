@@ -9,4 +9,17 @@
 
 @implementation Gigasecond
 
+- (id)initWithStartDate:(NSDate *)date {
+    self = [super init];
+    if (self) {
+        [self setDateFrom:date];
+    }
+    return self;
+}
+
+- (NSDate *)gigasecondDate {
+    double gigasecond = 1000000000;
+    return [_dateFrom dateByAddingTimeInterval:gigasecond];
+}
+
 @end

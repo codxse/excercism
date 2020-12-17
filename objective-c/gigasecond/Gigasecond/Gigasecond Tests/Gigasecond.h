@@ -11,7 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Gigasecond : NSObject
 
-- (id) initWithStartDat:(NSDateFormatter*)dateFormat;
+@property NSDate *dateFrom;
+
+- (id)initWithStartDate:(NSDate*)date;
+
+- (NSDate *)gigasecondDate;
 
 @end
 
