@@ -7,10 +7,7 @@ struct Year {
     }
     
     var isLeapYear: Bool {
-        isDivisible(by: 400, year) || (!isDivisible(by: 100, year) && isDivisible(by: 4, year))
+        return year.isMultiple(of: 4) && (!year.isMultiple(of: 100) || year.isMultiple(of: 400))
     }
-    
-    func isDivisible(by denom: Int, _ nomi: Int) -> Bool {
-        nomi % denom == 0
-    }
+
 }
